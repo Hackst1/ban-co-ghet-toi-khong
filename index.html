@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bạn có ghét tôi không😁?</title>
+    <style>
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Bạn có ghét tôi không😁?</h1>
+
+<button id="yesButton">Có</button>
+<button id="noButton">Không</button>
+
+<script>
+    const yesButton = document.getElementById('yesButton');
+    const noButton = document.getElementById('noButton');
+
+    // Khi người dùng nhấn vào "Có", nó sẽ tự động chuyển về "Không"
+    yesButton.addEventListener('click', function() {
+        alert('Bạn không thể chọn "Có", hãy chọn "Không".');
+        noButton.focus();  // Chuyển sự chú ý về nút "Không"
+    });
+
+    // Khi người dùng nhấn vào "Không"
+    noButton.addEventListener('click', function() {
+        alert('Cảm ơn bạn đã chọn "Không"!');
+    });
+</script>
+
+</body>
+</html>
